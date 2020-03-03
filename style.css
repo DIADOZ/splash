@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Display:400,400i|Lexend+Deca&display=swap');
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+#splash2 {
+    display: none;
+}
+
+#splash1 {
+    display: none;
+}
+
+#splash3 {
+    display: none;
+}
+
+h1 {
+    font-family: 'CircularSd-Bold', Arial, Helvetica, sans-serif;
+    font-size: 25.5vw;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'CircularSd-Bold', Arial, Helvetica, sans-serif;
+    font-size: 5vw;
+    margin: 0;
+}
+
+h3 {
+    font-family: 'CircularSd-Bold', Arial, Helvetica, sans-serif;
+    font-size: 4vw;
+    margin: 0;
+    color: rgb(110, 110, 110);
+}
+
+p {
+    font-family: 'Lexend Deca', Arial, Helvetica, sans-serif;
+}
+
+.version-header-row {
+    text-align: center;
+}
+
+.logo-row {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.image-caption {
+    font-family: 'DM Serif Display';
+    font-style: italic;
+    color: rgb(110, 110, 110);
+}
+
+select {
+    cursor: pointer;
+    font-family: 'CircularSd-Bold', Arial, Helvetica, sans-serif;
+    font-size: 45vw;
+    margin: 0 auto;
+}
+
+.version-link {
+    font-size: 40vw;
+    text-decoration: none !important;
+    color: gray;
+    line-height: 40px;
+}
+
+.version-link:hover {
+    font-size: 40vw;
+    text-decoration: none !important;
+    color: rgb(50, 140, 241);
+}
+
+.cover {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: "CircularSd-Bold";
+    src: url("media/CircularStd-Bold.otf");
+}
+
+/* #### Mobile Phones Portrait #### */
+
+@media screen and (max-device-width: 480px) {
+    body {
+        /* background-color: green; */
+    }
+}
+
+/* #### Tablets Portrait or Landscape #### */
+
+@media screen and (min-device-width: 480px) and (max-device-width: 1024px) {
+    body {
+        /* background-color: red; */
+    }
+    p {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+}
+
+/* #### Desktops #### */
+
+@media screen and (min-width: 1024px) {
+    body {
+        /* background-color: blue; */
+    }
+    p {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+}
