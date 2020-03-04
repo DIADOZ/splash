@@ -1,10 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=DM+Serif+Display:400,400i|Lexend+Deca&display=swap');
-html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
+/* #### Mobile Phones Portrait #### */
+
+@media screen and (max-device-width: 480px) {
+    body {
+        background-color: green;
+    }
+}
+
+/* #### Tablets Portrait or Landscape #### */
+
+@media screen and (min-device-width: 480px) and (max-device-width: 1024px) {
+    body {
+        background-color: red;
+    }
+}
+
+/* #### Desktops #### */
+
+@media screen and (min-width: 1024px) {
+    body {
+        background-color: blue;
+    }
 }
 
 #splash2 {
@@ -75,6 +91,7 @@ select {
     text-decoration: none !important;
     color: gray;
     line-height: 40px;
+    /* height: 35px; */
 }
 
 .version-link:hover {
@@ -94,34 +111,7 @@ select {
     src: url("media/CircularStd-Bold.otf");
 }
 
-/* #### Mobile Phones Portrait #### */
-
-@media screen and (max-device-width: 480px) {
-    body {
-        /* background-color: green; */
-    }
-}
-
-/* #### Tablets Portrait or Landscape #### */
-
-@media screen and (min-device-width: 480px) and (max-device-width: 1024px) {
-    body {
-        /* background-color: red; */
-    }
-    p {
-        margin-left: 80px;
-        margin-right: 80px;
-    }
-}
-
-/* #### Desktops #### */
-
-@media screen and (min-width: 1024px) {
-    body {
-        /* background-color: blue; */
-    }
-    p {
-        margin-left: 80px;
-        margin-right: 80px;
-    }
-}
+/*     
+    font-family: 'DM Serif Display', ;  sans-serif
+    font-family: 'Lexend Deca', ; serif
+    */
