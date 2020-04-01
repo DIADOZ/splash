@@ -1,27 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=DM+Serif+Display:400,400i|Lexend+Deca&display=swap');
 /* #### Mobile Phones Portrait #### */
 
-@media screen and (max-device-width: 480px) {
-    body {
-        background-color: green;
-    }
-}
 
-/* #### Tablets Portrait or Landscape #### */
-
-@media screen and (min-device-width: 480px) and (max-device-width: 1024px) {
-    body {
-        background-color: red;
-    }
-}
-
-/* #### Desktops #### */
-
-@media screen and (min-width: 1024px) {
-    body {
-        background-color: blue;
-    }
-}
 
 #splash2 {
     display: none;
@@ -32,7 +12,7 @@
 }
 
 #splash3 {
-    display: none;
+    /* display: none; */
 }
 
 h1 {
@@ -43,19 +23,24 @@ h1 {
 
 h2 {
     font-family: 'CircularSd-Bold', Arial, Helvetica, sans-serif;
-    font-size: 5vw;
+    font-size: 4vw;
     margin: 0;
 }
 
 h3 {
     font-family: 'CircularSd-Bold', Arial, Helvetica, sans-serif;
-    font-size: 4vw;
+    font-size: 3vw;
     margin: 0;
     color: rgb(110, 110, 110);
 }
 
 p {
     font-family: 'Lexend Deca', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+label {
+    font-family: 'CircularSd-Bold', Arial, Helvetica, sans-serif;
 }
 
 .version-header-row {
@@ -63,7 +48,7 @@ p {
 }
 
 .logo-row {
-    width: 100px;
+    width: 130px;
     margin: 0 auto;
 }
 
@@ -82,7 +67,7 @@ p {
 select {
     cursor: pointer;
     font-family: 'CircularSd-Bold', Arial, Helvetica, sans-serif;
-    font-size: 45vw;
+    /* font-size: 45vw; */
     margin: 0 auto;
 }
 
@@ -106,12 +91,62 @@ select {
     margin: 0 auto;
 }
 
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 @font-face {
     font-family: "CircularSd-Bold";
     src: url("media/CircularStd-Bold.otf");
+}
+.credit {
+    text-align: center;
 }
 
 /*     
     font-family: 'DM Serif Display', ;  sans-serif
     font-family: 'Lexend Deca', ; serif
     */
+
+    @media screen and (max-device-width: 480px) {
+        body {
+            /* background-color: green; */
+        }
+    }
+    
+    /* #### Tablets Portrait or Landscape #### */
+    
+    @media screen and (min-device-width: 480px) and (max-device-width: 1024px) {
+        body {
+            /* background-color: red; */
+        }
+    }
+    
+    /* #### Desktops #### */
+    
+    @media screen and (min-width: 1024px) {
+        body {
+            /* background-color: blue; */
+        }
+        .body-container{
+            flex-wrap: wrap;
+            margin: auto;
+            max-width: 1188px;
+            min-width: 1020px;
+        }
+    
+        h1 {
+            font-family: 'CircularSd-Bold', Arial, Helvetica, sans-serif;
+            font-size: 15vw;
+            margin: 0;
+        }
+    }
