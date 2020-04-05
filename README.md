@@ -1,2 +1,2 @@
-# splash-website
-Showcase website for Splash Mixtape by DIADOZ
+# splash
+Showcase website for Splash mixtape series by DIADOZ.
