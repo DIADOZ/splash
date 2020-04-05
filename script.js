@@ -26,3 +26,4 @@ function showSplash1() {
     document.getElementById("splash3").style.display = "none";
     document.getElementById("splash1").style.display = "block";
 }
+

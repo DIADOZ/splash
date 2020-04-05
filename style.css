@@ -1,7 +1,77 @@
 @import url('https://fonts.googleapis.com/css?family=DM+Serif+Display:400,400i|Lexend+Deca&display=swap');
 /* #### Mobile Phones Portrait #### */
 
+/* .page-div {
+    padding: 8px;
+    position:fixed;
+    top:0px;
+    left:0px;
+    height:100%;
 
+    overflow-x: hidden;
+    
+    Fallback if gradeints don't work
+    background: #d2dde3;
+    
+    Linear gradient...
+    background: 
+      radial-gradient(
+       at center, #fbbebd, #e9513c
+      );
+} */
+
+.page-div {
+    padding: 8px;
+    /* position:fixed; */
+    top:0px;
+    left:0px;
+    height:100%;
+
+    overflow-x: hidden;
+    
+    background: linear-gradient(197deg, #ffffff, #dbdbdb, #e3e3e3, #28ceff, #48d5ff, #ffffff, #2bced7, #1a6aee, #dfdfdf);
+    background-size: 1800% 1800%;
+    
+    -webkit-animation: AnimationName 50s ease infinite;
+    -moz-animation: AnimationName 50s ease infinite;
+    animation: AnimationName 50s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:39% 0%}
+    50%{background-position:62% 100%}
+    100%{background-position:39% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:39% 0%}
+    50%{background-position:62% 100%}
+    100%{background-position:39% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:39% 0%}
+    50%{background-position:62% 100%}
+    100%{background-position:39% 0%}
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:39% 0%}
+    50%{background-position:62% 100%}
+    100%{background-position:39% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:39% 0%}
+    50%{background-position:62% 100%}
+    100%{background-position:39% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:39% 0%}
+    50%{background-position:62% 100%}
+    100%{background-position:39% 0%}
+}
+
+body {
+    margin: 0;
+}
 
 #splash2 {
     display: none;
@@ -120,6 +190,18 @@ select {
     @media screen and (max-device-width: 480px) {
         body {
             /* background-color: green; */
+        }
+
+        h2 {
+            font-size: 5vw;
+        }
+        
+        h3 {
+            font-size: 6vw;
+        }
+
+        p {
+            font-size: 15px;
         }
     }
     
