@@ -2,13 +2,15 @@
 <html>
 
 <head>
-    <title>🌊 SPLASH 🌊</title>
+    <title>SPLASH</title>
 
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!----------Scripts---------->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
+
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
         $(document).mousemove(function (event) {
@@ -55,284 +57,413 @@
             </div>
         </div>
         <div class="body-container">
+            <!-- TODO: Consider new font for this text and better wording -->
             <div class="splash-title-row">
-                <p>
-                    Splash is the only West Virginia compilation mixtape in the world. The series and tracklists are curated by DIADOZ&trade;. 
+                <p class="body-unit">
+                    Splash is the only West Virginia compilation mixtape in the world. The series and tracklists are
+                    curated by DIADOZ&trade;.
+                </p class="body-unit">
+                <p class="body-unit">
+                    We are a multimedia design company based in WV and NYC.
                 </p>
-                <p>
-                    DIADOZ&trade; is a multimedia design company based in WV and NYC.
-                </p>
-                <p>
-                    To support this project and others like it check out the <a target="_blank" href="https://shop.diadoz.com">shop</a></p>
-                    
-                    <p>If you're broke as shit or don't see anything in the shop that you fuck with, you can always follow our <a target="_blank" href="#">socials</a> for free! 😃.
-                </p> 
-                <!-- <div>
-                    <label for="splash-versions">SPLASH</label>
-                    <select id="splash-versions" onchange="selectVersion()">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3" selected>3</option>
-                    </select>
-                </div> -->
 
-                <div class="splash-version-button">
+                <p class="body-unit">To support this project and others like it check out our
+                    <a target="_blank" href="https://shop.diadoz.com">shop</a> and
+                    <a target="_blank" href="https://socials.diadoz.com">socials</a>! 😃.
+                </p>
+
+                <!-- TODO: New font -->
+                <div class="splash-version-button body-unit">
                     <button onclick="showSplash1()" class="btn btn1">SPLASH I</button>
                     <button onclick="showSplash2()" class="btn btn2">SPLASH II</button>
-                    <button  onclick="showSplash3()" class="btn btn3">SPLASH III</button>
+                    <button onclick="showSplash3()" class="btn btn3">SPLASH III</button>
                 </div>
-                <!-- <div class="version-row">
-                <h1 class="version-header-row">
-                <a class="version-link" href="javascript:showSplash3()">3</a>
-                <a class="version-link" href="javascript:showSplash2()">2</a>
-                <a class="version-link" href="javascript:showSplash1()">1</a>
-                </h1>
-            </div> -->
+
             </div>
 
             <br />
             <div id="splash1" class="splash">
-                <img class="cover" src="media/splash1-cover.jpg" />
-                <figcaption class="image-caption">Art direction and Graphic Design by Bailyultd</figcaption>
                 <div class="credit">
-                    <br />
-                    <h2>1. Chris Benoit</h2>
-                    <h3>PartyX</h3>
-                    <!-- <span class="song-credit">Vocals: PartyX</span> -->
-                    <br />
-                    <h2>2. Life Sucks</h2>
-                    <h3>PesoCastro, Qually</h3>
-                    <!-- <span class="song-credit">Vocals: PesoCastro, Qually</span> -->
-                    <br />
-                    <h2>3. Fake Celebs (Flex)</h2>
-                    <h3>OG Lil Jit</h3>
-                    <!-- <span class="song-credit">Vocals: OG Lil Jit</span> -->
-                    <br />
-                    <h2>4. WANNA KNOW</h2>
-                    <h3>2flyty</h3>
-                    <!-- <span class="song-credit">Produced: C Fre$hco</span> -->
-                    <br>
-                    <h2>5. Foreign</h2>
-                    <h3>RAMZY, Qually</h3>
-                    <!-- <span class="song-credit">Vocals: RAMZY, Qually</span> -->
-                    <br />
-                    <h2>6. Rap N*ggas</h2>
-                    <h3>TTD Cobby, Leak2Heats</h3>
-                    <!-- <span class="song-credit">Vocals: TTD CObby, Leak2heats</span> -->
-                    <br />
-                    <h2>7. High As Fuck Freestyle</h2>
-                    <h3>PesoCastro</h3>
-                    <!-- <span class="song-credit">Vocals: PesoCastro</span>
-                <span class="song-credit">Produced: Unknown & Unavalible</span> -->
-                    <br />
-                    <h2>8. LAX</h2>
-                    <h3>HAWK BOYZ</h3>
-                    <!-- <span class="song-credit">Vocals: Hawk Boys, Lamb$</span>
-                <span class="song-credit">Produced: Kwondo</span> -->
-                    <br />
-                    <h2>9. Exposed</h2>
-                    <h3>OG Lil Jit</h3>
-                    <!-- <span class="song-credit">Vocals: OG Lil Jit</span> -->
-                    <br />
-                    <h2>10. On Sight!</h2>
-                    <h3>WAVE, CHASE GWOP</h3>
-                    <br />
-                    <h2>11. Alone</h2>
-                    <h3>Qually</h3>
-                    <!-- <span class="song-credit">Vocals: Qually</span> -->
-                    <br />
+                    <img class="cover" src="media/splash1-cover.jpg" />
+                    <figcaption class="image-caption">Art direction and Graphic Design by Bailyultd</figcaption>
+                </div>
+                <div class="credit">
+                    <div class="body-unit">
+                        <br />
+                        <h2>1. Chris Benoit</h2>
+                        <h3>PartyX</h3>
+                        <!-- <span class="song-credit">Vocals: PartyX</span> -->
+                        <br />
+                    </div>
+                    <div class="body-unit">
+                        <h2>2. Life Sucks</h2>
+                        <h3>PesoCastro, Qually</h3>
+                        <!-- <span class="song-credit">Vocals: PesoCastro, Qually</span> -->
+                        <br />
+                    </div>
+                    <div class="body-unit">
+                        <h2>3. Fake Celebs (Flex)</h2>
+                        <h3>OG Lil Jit</h3>
+                        <!-- <span class="song-credit">Vocals: OG Lil Jit</span> -->
+                        <br />
+                    </div>
+                    <div class="body-unit">
+                        <h2>4. WANNA KNOW</h2>
+                        <h3>2flyty</h3>
+                        <!-- <span class="song-credit">Produced: C Fre$hco</span> -->
+                        <br>
+                    </div>
+                    <div class="body-unit">
+                        <h2>5. Foreign</h2>
+                        <h3>RAMZY, Qually</h3>
+                        <!-- <span class="song-credit">Vocals: RAMZY, Qually</span> -->
+                        <br />
+                    </div>
+                    <div class="body-unit">
+                        <h2>6. Rap N*ggas</h2>
+                        <h3>TTD Cobby, Leak2Heats</h3>
+                        <!-- <span class="song-credit">Vocals: TTD CObby, Leak2heats</span> -->
+                        <br />
+                    </div>
+                    <div class="body-unit">
+                        <h2>7. High As Fuck Freestyle</h2>
+                        <h3>PesoCastro</h3>
+                        <!-- <span class="song-credit">Vocals: PesoCastro</span>
+                    <span class="song-credit">Produced: Unknown & Unavalible</span> -->
+                        <br />
+                    </div>
+                    <div class="body-unit">
+                        <h2>8. LAX</h2>
+                        <h3>HAWK BOYZ</h3>
+                        <!-- <span class="song-credit">Vocals: Hawk Boys, Lamb$</span>
+                    <span class="song-credit">Produced: Kwondo</span> -->
+                        <br />
+                    </div>
+                    <div class="body-unit">
+                        <h2>9. Exposed</h2>
+                        <h3>OG Lil Jit</h3>
+                        <!-- <span class="song-credit">Vocals: OG Lil Jit</span> -->
+                        <br />
+                    </div>
+                    <div class="body-unit">
+                        <h2>10. On Sight!</h2>
+                        <h3>WAVE, CHASE GWOP</h3>
+                        <br />
+                    </div>
+                    <div class="body-unit">
+                        <h2>11. Alone</h2>
+                        <h3>Qually</h3>
+                        <!-- <span class="song-credit">Vocals: Qually</span> -->
+                        <br />
+                    </div>
                 </div>
             </div>
             <div id="splash2" class="splash">
-                <img class="cover" src="media/splash2-cover.jpg" />
-                <figcaption class="image-caption">Art direction and Graphic Design by Bailyultd (Bailey Correa)
-                </figcaption>
-                <br />
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/b-zU_rqmXcg" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                <div class="body-unit">
+                    <img class="cover" src="media/splash2-cover.jpg" />
+                    <figcaption class="image-caption">Art direction and Graphic Design by Bailyultd (Bailey Correa)
+                    </figcaption>
+                    <br />
                 </div>
-                <figcaption class="image-caption">Full music mix.
+                <div class="body-unit">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/b-zU_rqmXcg" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <figcaption class="image-caption">Full "Splash 2" mix (<a target="_blank" href="">YouTube</a>).
+                
+
                 </figcaption>
+            </div>
                 <div class="credit">
                     <br />
-                    <h2>1. Cowardly Lion</h2>
-                    <h3>Nike Aston</h3>
-                    <!-- <span class="song-credit">Vocals: Nike Aston</span>
-                <span class="song-credit">Produced: Unknown</span>
-                <span class="song-credit">Mixed/Mastered: Nike Aston</span> -->
-                    <br />
-                    <h2>2. Bad in Me</h2>
-                    <h3>Dre Sol</h3>
-                    <!-- <span class="song-credit">Vocals: Dre Sol, Dee</span>
-                <span class="song-credit">Official Cover Art: Tyler Welder</span> -->
-                    <br />
-                    <h2>3. Like A Mil</h2>
-                    <h3>OG Lil Jit</h3>
-                    <!-- <span class="song-credit">Vocals: OG Lil Jit</span>
-                <span class="song-credit">Mixed/Mastered: Turner Truiett</span> -->
-                    <br />
-                    <h2>4. One Way</h2>
-                    <h3>Peso Castro</h3>
-                    <br>
-                    <h2>5. ENERGY!</h2>
-                    <h3>Wavy Kang, Qually</h3>
-                    <!-- <span class="song-credit">Vocals: Wavy Kang, Qually</span> -->
-                    <br />
-                    <h2>6. Bulletproof Vest</h2>
-                    <h3>Lisha Mane of Hawkboyz</h3>
-                    <!-- <span class="song-credit">Hawkboyz, Lisha Mane, Reid</span> -->
-                    <br />
-                    <h2>7. Sacrifice</h2>
-                    <h3>Party Marty</h3>
-                    <br />
-                    <h2>8. Gorilla Glue</h2>
-                    <h3>$lay</h3>
-                    <br />
-                    <h2>9. Don't Work</h2>
-                    <h3>OG Lil Jit</h3>
-                    <br />
-                    <h2>10. Sushi</h2>
-                    <h3>2flyty</h3>
-                    <br />
-                    <h2>11. Authentic</h2>
-                    <h3>Dre Sol</h3>
-                    <br />
-                    <h2>12. Jordan</h2>
-                    <h3>Wilson Raps, Nick Diminico</h3>
-                    <br />
-                    <h2>13. Krazy</h2>
-                    <h3>Ghandiii</h3>
-                    <br />
-                    <h2>14. Regular</h2>
-                    <h3>Louie Fame</h3>
-                    <br />
-                    <h2>15. These Days</h2>
-                    <h3>Dougie Oak</h3>
-                    <br />
-                    <h2>16. Rocking and Rollin</h2>
-                    <h3>TTD BigPoppa</h3>
-                    <br />
-                    <h2>17. Side Hoe</h2>
-                    <h3>Peso Castro</h3>
-                    <br />
-                    <h2>18. Drip</h2>
-                    <h3>ExZackLee</h3>
-                    <br />
-                    <h2>19. Stay Down</h2>
-                    <h3>TTD Cobby</h3>
-                    <br />
-                    <h2>20. Like Them</h2>
-                    <h3>OG Lil Jit</h3>
+                    <div class="body-unit">
+                        <h2>1. Cowardly Lion</h2>
+                        <h3>Nike Aston</h3>
+                        <!-- <span class="song-credit">Vocals: Nike Aston</span>
+                    <span class="song-credit">Produced: Unknown</span>
+                    <span class="song-credit">Mixed/Mastered: Nike Aston</span> -->
+                        <br />
+                    </div>
+                    <div class="body-unit">
+                        <h2>2. Bad in Me</h2>
+                        <h3>Dre Sol</h3>
+                        <!-- <span class="song-credit">Vocals: Dre Sol, Dee</span>
+                    <span class="song-credit">Official Cover Art: Tyler Welder</span> -->
+                        <br />
+                    </div>
+                    <div class="body-unit">
+                        <h2>3. Like A Mil</h2>
+                        <h3>OG Lil Jit</h3>
+                        <!-- <span class="song-credit">Vocals: OG Lil Jit</span>
+                    <span class="song-credit">Mixed/Mastered: Turner Truiett</span> -->
+                        <br />
+                    </div>
+                    <div class="body-unit">
+                        <h2>4. One Way</h2>
+                        <h3>Peso Castro</h3>
+                        <br>
+                    </div>
+                    <div class="body-unit">
+                        <h2>5. ENERGY!</h2>
+                        <h3>Wavy Kang, Qually</h3>
+                        <!-- <span class="song-credit">Vocals: Wavy Kang, Qually</span> -->
+                        <br />
+                    </div>
+                    <div class="body-unit">
+                        <h2>6. Bulletproof Vest</h2>
+                        <h3>Lisha Mane of Hawkboyz</h3>
+                        <!-- <span class="song-credit">Hawkboyz, Lisha Mane, Reid</span> -->
+                        <br />
+                    </div>
+                    <div class="body-unit">
+                        <h2>7. Sacrifice</h2>
+                        <h3>Party Marty</h3>
+                        <br />
+                    </div>
+                    <div class="body-unit">
+                        <h2>8. Gorilla Glue</h2>
+                        <h3>$lay</h3>
+                        <br />
+                    </div>
+                    <div class="body-unit">
+                        <h2>9. Don't Work</h2>
+                        <h3>OG Lil Jit</h3>
+                        <br />
+                    </div>
+                    <div class="body-unit">
+                        <h2>10. Sushi</h2>
+                        <h3>2flyty</h3>
+                        <br />
+                    </div>
+                    <div class="body-unit">
+                        <h2>11. Authentic</h2>
+                        <h3>Dre Sol</h3>
+                        <br />
+                    </div>
+                    <div class="body-unit">
+                        <h2>12. Jordan</h2>
+                        <h3>Wilson Raps, Nick Diminico</h3>
+                        <br />
+                    </div>
+                    <div class="body-unit">
+                        <h2>13. Krazy</h2>
+                        <h3>Ghandiii</h3>
+                        <br />
+                    </div>
+                    <div class="body-unit">
+                        <h2>14. Regular</h2>
+                        <h3>Louie Fame</h3>
+                        <br />
+                    </div>
+                    <div class="body-unit">
+                        <h2>15. These Days</h2>
+                        <h3>Dougie Oak</h3>
+                        <br />
+                    </div>
+                    <div class="body-unit">
+                        <h2>16. Rocking and Rollin</h2>
+                        <h3>TTD BigPoppa</h3>
+                        <br />
+                    </div>
+                    <div class="body-unit">
+                        <h2>17. Side Hoe</h2>
+                        <h3>Peso Castro</h3>
+                        <br />
+                        </dv>
+                        <div class="body-unit">
+                            <h2>18. Drip</h2>
+                            <h3>ExZackLee</h3>
+                            <br />
+                        </div>
+                        <div class="body-unit">
+                            <h2>19. Stay Down</h2>
+                            <h3>TTD Cobby</h3>
+                            <br />
+                        </div>
+                        <div class="body-unit">
+                            <h2>20. Like Them</h2>
+                            <h3>OG Lil Jit</h3>
+                            <br />
+                        </div>
+                    </div>
+                    <div class="body-unit">
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/h3aReTzuotE" frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <figcaption class="image-caption">Promo video, visual by Renzo Diaz, sound by Turner Truiett
+                        </figcaption>
+                        <br />
+                    </div>
+                    <div class="body-unit">
+                        <img class="cover" src="media/splash2-back.png" />
+                        <figcaption class="image-caption">Back cover art by Bailey Correa
+                        </figcaption>
+                    </div>
                 </div>
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/h3aReTzuotE" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </div>
-                <figcaption class="image-caption">Promo video, visual by Renzo Diaz, sound by Turner Truiett
-                </figcaption>
-                <br />
-                <img class="cover" src="media/splash2-back.png" />
-                <figcaption class="image-caption">Back cover art by Bailey Correa
-                </figcaption>
             </div>
             <div id="splash3" class="splash">
-                <img class="cover" src="media/splash3-cover.jpg" />
-                <figcaption class="image-caption">Art direction and Graphic Design by imstilljulie (Julie Winegard)
-                </figcaption>
+                <div class="body-unit">
+                    <img class="cover" src="media/splash3-cover.jpg" />
+                    <figcaption class="image-caption">Cover Art by Julie Winegard (<a target="_blank"
+                            href="https://www.instagram.com/imstilljulie/">@imstilljulie</a>)
+                    </figcaption>
+                </div>
                 <div class="credit">
                     <br />
-                    <h2>1. ROXANNE (Remix)</h2>
-                    <h3>Arizona Zervas, Swae Lee</h3>
-                    <br />
-                    <h2>2. Slide Thru</h2>
-                    <h3>J Word, Ponce De'leioun</h3>
-                    <br />
-                    <h2>3. Wake Up</h2>
-                    <h3>Nike Aston</h3>
-                    <br />
-                    <h2>4. MAD MAX</h2>
-                    <h3>Woody Pond</h3>
-                    <br>
-                    <h2>5. Wonton</h2>
-                    <h3>Ghandiii</h3>
-                    <br />
-                    <h2>6. Trap</h2>
-                    <h3>TK Blockstar</h3>
-                    <br />
-                    <h2>7. Again3x</h2>
-                    <h3>OG Lil Jit</h3>
-                    <br />
-                    <h2>8. Poor buddy</h2>
-                    <h3>Qually</h3>
-                    <br />
-                    <h2>9. Like Woah</h2>
-                    <h3>J Riddle, J Word</h3>
-                    <br />
-                    <h2>10. Duh</h2>
-                    <h3>Zaddy Sama</h3>
-                    <br />
-                    <h2>11. Crash Bandicoot Unleashed Freestlye</h2>
-                    <h3>PesoCastro</h3>
-                    <br />
-                    <h2>12. Throwin' Salt</h2>
-                    <h3>Ponce De'leioun, Iman Shumpert</h3>
-                    <br />
-                    <h2>13. Trippin</h2>
-                    <h3>ExZackLee</h3>
-                    <br />
-                    <h2>14. On a Wave</h2>
-                    <h3>Ghandiii</h3>
-                    <br />
-                    <h2>15. OTM [ On The Move]</h2>
-                    <h3>2flyty</h3>
-                    <br />
-                    <h2>16. DANGER</h2>
-                    <h3>HAWK BOYZ</h3>
-                    <br />
-                    <h2>17. Ocarina</h2>
-                    <h3>Zaddy Sama, PesoCastro</h3>
-                    <br />
-                    <h2>18. Eyes</h2>
-                    <h3>Dee3x</h3>
-                    <br />
-                    <h2>19. "F350 Freestyle" (Country Rap Remix Park Row)</h2>
-                    <h3>David Morris</h3>
-                    <br />
-                    <h2>20. Block Star</h2>
-                    <h3>Chris Allen, Reggie Volume, Te Legend</h3>
-                    <br />
-                    <h2>21. ghostie</h2>
-                    <h3>Woody Pond</h3>
-                    <br />
-                    <h2>22. Places</h2>
-                    <h3>Dougy Oak</h3>
-                    <br />
-                    <h2>23. 143</h2>
-                    <h3>J Word, O$o Reese</h3>
-                    <br />
-                    <h2>24. Sky Fall</h2>
-                    <h3>PartyX</h3>
-                    <br />
-                    <h2>25. Ten Toes Down</h2>
-                    <h3>TTD Cobby</h3>
-                    <br />
-                    <h2>26. Remember</h2>
-                    <h3>Mac Miller</h3>
-                    <p>Special thanks to Cole Frasher.</p>
-                    <img class="cover" src="media/splash3-back.jpg" />
+                    <div class="body-unit">
+                        <h2>1. ROXANNE (Remix)</h2>
+                        <h3>Arizona Zervas, Swae Lee</h3>
+                        <br />
+                    </div>
 
+                    <div class="body-unit">
+                        <h2>2. Slide Thru</h2>
+                        <h3>J Word, Ponce De'leioun</h3>
+                        <br />
+                    </div>
+                    <div class="body-unit">
+                        <h2>3. MAD MAX</h2>
+                        <h3>Woody Pond</h3>
+                        <br>
+                    </div>
+                    <div class="body-unit">
+                        <h2>4. Wonton</h2>
+                        <h3>Ghandiii</h3>
+                        <br />
+                    </div>
+                    <div class="body-unit">
+                        <h2>5. Trap</h2>
+                        <h3>TK Blockstar</h3>
+                        <br />
+                    </div>
+                    <div class="body-unit">
+                        <h2>6. Poor buddy</h2>
+                        <h3>Qually</h3>
+                        <br />
+                    </div>
+                    <div class="body-unit">
+                        <h2>7. Duh</h2>
+                        <h3>Zaddy Sama, John Brisco</h3>
+                        <br />
+                    </div>
+                    <div class="body-unit">
+                        <h2>8. Makin' Plays</h2>
+                        <h3>Ponce De'leioun, Jose Guapo</h3>
+                        <br />
+                    </div>
+                    <div class="body-unit">
+                        <h2>9. Live From The Heartland</h2>
+                        <h3>David Morris</h3>
+                        <br />
+                    </div>
+                    <div class="body-unit">
+                        <h2>10. Detroit Freestyle</h2>
+                        <h3>PesoCastro, Kasher Quon</h3>
+                        <br />
+                    </div>
+                    <div class="body-unit">
+                        <h2>11. DANGER</h2>
+                        <h3>HAWK BOYZ</h3>
+                        <br />
+                    </div>
+                    <div class="body-unit">
+                        <h2>12. Like Woah</h2>
+                        <h3>J Riddle, J Word</h3>
+                        <br />
+                    </div>
+                    <div class="body-unit">
+                        <h2>13. Block Star</h2>
+                        <h3>Chris Allen</h3>
+                        <br />
+                    </div>
+                    <div class="body-unit">
+                        <h2>14. One Too Many</h2>
+                        <h3>Dee3x</h3>
+                        <br />
+                    </div>
+                    <div class="body-unit">
+                        <h2>15. OTM [On The Move]</h2>
+                        <h3>2flyty</h3>
+                        <br />
+                    </div>
+                    <div class="body-unit">
+                        <h2>16. Astral Projection</h2>
+                        <h3>Lil B.R.O., OG Lil Jit</h3>
+                        <br />
+                    </div>
+                    <div class="body-unit">
+                        <h2>17. Fly By Night</h2>
+                        <h3>Zaddy Sama</h3>
+                        <br />
+                    </div>
+                    <div class="body-unit">
+                        <h2>18. Places</h2>
+                        <h3>Dougy Oak</h3>
+                        <br />
+                    </div>
+                    <div class="body-unit">
+                        <h2>19. Trippin</h2>
+                        <h3>ExZackLee</h3>
+                        <br />
+                    </div>
+                    <div class="body-unit">
+                        <h2>20. On a Wave</h2>
+                        <h3>Ghandiii</h3>
+                        <br />
+                    </div>
+                    <div class="body-unit">
+                        <h2>21. ghostie</h2>
+                        <h3>Woody Pond</h3>
+                        <br />
+                    </div>
+                    <div class="body-unit">
+                        <h2>22. Wake Up</h2>
+                        <h3>Nike Aston</h3>
+                        <br />
+                    </div>
+                    <div class="body-unit">
+                        <h2>23. 143</h2>
+                        <h3>J Word, O$o Reese</h3>
+                        <br />
+                    </div>
+                    <div class="body-unit">
+                        <h2>24. Sky Fall</h2>
+                        <h3>PartyX</h3>
+                        <br />
+                    </div>
+                    <div class="body-unit">
+                        <h2>25. Ten Toes Down</h2>
+                        <h3>TTD Cobby</h3>
+                        <br />
+                    </div>
+                    <div class="body-unit">
+                        <h2>26. Remember</h2>
+                        <h3>Mac Miller</h3>
+                    </div>
+                    <p class="body-unit">This mixtape was released on "". Special thanks to Cole Frasher, Julie
+                        Winegard, Gary Laruta, Turner Truiett, and all of the featured artists for their
+                        contribution to
+                        this project.</p>
+                </div>
+                <div class="body-unit">
+                    <img class="cover" src="media/splash3-back.jpg" />
+                    <figcaption class="image-caption">Tracklist Art by Julie Winegard (<a target="_blank"
+                            href="https://www.instagram.com/imstilljulie/">@imstilljulie</a>)
+                    </figcaption>
                 </div>
             </div>
+
+            <hr>
+            <div class="footer">
+                <span><a target="_blank" href="socials.html">-SOCIAL MEDIA-</a>. Copyright 2020 by DIADOZ. All
+                    Rights
+                    Reserved.</span>
+            </div>
         </div>
-        <hr>
-        <div class="footer">
-            <span><a target="_blank" href="socials.html">-SOCIAL MEDIA-</a>. Copyright 2020 by DIADOZ. All Rights
-                Reserved.</span>
-        </div>
-    </div>
 </body>
 
 </html>
