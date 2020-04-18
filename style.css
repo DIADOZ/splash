@@ -133,12 +133,12 @@ body {
     border-radius: 0 0 50% 50%;
 }
 
-.btn2::before, .btn3::before {
+.btn2::before{
     bottom: 0;
     border-radius: 50% 50% 0 0;
 }
 
-.btn1:hover::before, .btn2:hover::before {
+.btn1:hover::before, .btn2:hover::before, .btn3:hover::before {
     height: 180%;
 }
 
