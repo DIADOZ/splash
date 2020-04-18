@@ -1,25 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=DM+Serif+Display:400,400i|Lexend+Deca&display=swap');
 /* #### Mobile Phones Portrait #### */
 
-/* .page-div {
-    padding: 8px;
-    position:fixed;
-    top:0px;
-    left:0px;
-    height:100%;
-
-    overflow-x: hidden;
-    
-    Fallback if gradeints don't work
-    background: #d2dde3;
-    
-    Linear gradient...
-    background: 
-      radial-gradient(
-       at center, #fbbebd, #e9513c
-      );
-} */
-
 @-webkit-keyframes AnimationName {
     0% {
         background-position: 39% 0%
@@ -91,9 +72,10 @@
         background-position: 39% 0%
     }
 }
+
+
 
 .page-div {
-    padding: 8px;
     /* position:fixed; */
     top: 0px;
     left: 0px;
@@ -119,10 +101,10 @@ body {
     font-family: 'CircularSd-Bold', Arial, Helvetica, sans-serif;
     border: 1px solid black;
     background: none;
-    padding: 10px 20px;
-    font-size: 20px;
+    padding: 10px 15px;
+    font-size: 18px;
     cursor: pointer;
-    margin: 10px;
+    margin: 5px;
     transition: 0.8s;
     position: relative;
     overflow: hidden;
@@ -178,12 +160,7 @@ body {
     }
   }
 
-/* .fade {
-
-    animation: 1.25s showIn ease-in forwards;
-  } */
-
-  .fade {
+.fade {
     animation: 1.25s showIn ease-in forwards;
 }
 
@@ -199,6 +176,26 @@ body {
     /* display: none; */
 }
 
+a:link {
+    color: black;
+    font-style: unset;
+}
+a:visited {
+ color: black;
+}
+a:hover {
+    color: rgb(255, 255, 255);
+}
+a:active
+{
+ color: tomato;
+}
+
+::selection {
+    color: white;
+    background: rgb(255, 99, 71);
+}
+
 h1 {
     font-family: 'CircularSd-Bold', Arial, Helvetica, sans-serif;
     font-size: 25.5vw;
@@ -209,18 +206,41 @@ h2 {
     font-family: 'CircularSd-Bold', Arial, Helvetica, sans-serif;
     font-size: 4vw;
     margin: 0;
+
+    /* text-shadow: .5px 2px 3px rgba(53, 53, 53, 0.747); */
 }
 
 h3 {
     font-family: 'CircularSd-Bold', Arial, Helvetica, sans-serif;
     font-size: 3vw;
     margin: 0;
-    color: rgb(110, 110, 110);
+    color: rgb(0, 0, 0);
+    
+    text-shadow: 0 1px #1885b8,
+    -1px 0 #cdd2d5,
+    -1px 2px #28799e,
+    -2px 1px #cdd2d5,
+    -2px 3px #28799e,
+    -3px 2px #cdd2d5,
+    -3px 4px #28799e,
+    -4px 3px #cdd2d5,
+    -4px 5px #28799e,
+    -5px 4px #cdd2d5,
+    -5px 6px #28799e,
+    -6px 5px #cdd2d5,
+    -6px 7px #28799e,
+    -7px 6px #cdd2d5,
+    -7px 8px #28799e,
+    -8px 7px #cdd2d5;
 }
-
 p {
     font-family: 'Lexend Deca', Arial, Helvetica, sans-serif;
     font-size: 20px;
+
+}
+
+.padding-left-right {
+    padding: 0 8px 0 8px; 
 }
 
 label {
@@ -240,12 +260,13 @@ label {
     width: 100%;
     margin: 0 auto;
     text-align: center;
+    padding-top: 8px;
 }
 
 .image-caption {
     font-family: 'DM Serif Display';
     font-style: italic;
-    color: rgb(110, 110, 110);
+    color: rgb(0, 0, 0);
 }
 
 select {
@@ -299,6 +320,23 @@ select {
     text-align: center;
 }
 
+.footer {
+    background: rgb(43, 43, 43);
+    text-align: center;
+    padding: 25px 0 0 0;
+}
+
+.footer p{
+    color: white;
+    margin: 0;
+    padding: 0 0 20px 0;
+    font-size: 15px;
+}
+
+.footer a{
+    color: white;
+    margin: 0;
+}
 /*     
     font-family: 'DM Serif Display', ;  sans-serif
     font-family: 'Lexend Deca', ; serif
@@ -347,4 +385,6 @@ select {
     h3 {
         padding-bottom: 5vh;
     }
+
+
 }
