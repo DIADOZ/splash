@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Display:400,400i|Lexend+Deca&display=swap');
+/* #### Mobile Phones Portrait #### */
+
+.logo-row {
+    width: 130px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.social-row {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
+
+body {
+    background-color: black;
+}
+
+c a {
+    text-decoration: none;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: red;
+}
+
+p {
+    font-family: 'Lexend Deca', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 50px;
+}
